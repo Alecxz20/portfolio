@@ -2,10 +2,11 @@ import style from './Hero.module.css'
 import { AiOutlineDownload } from 'react-icons/ai'
 import Reveal from './Reveal'
 import profile from '../assets/profile.png'
+import resume from "../assets/Alexis_Perez-Resume.pdf"
 
 export default function Hero() {
   return (
-    <section className={style.container}>
+    <section id='home' className={style.container}>
       <div className={style.hero}>
         <div className={style.heroDescription}>
           <Reveal>
@@ -20,13 +21,19 @@ export default function Hero() {
             <p className={style.heroText}>Front-end React Developer</p>
           </Reveal>
           <Reveal>
-            <button className={style.heroBtn}>
-              <span>Get Resume</span>
-              <AiOutlineDownload className={style.heroIcon} />
-            </button>
+            <a
+              download="resume-alexis-perez"
+              href={resume}
+              style={{ textDecoration: 'none', color: 'inherit' }}
+            >
+              <button className={style.heroBtn}>
+                <span>Get Resume</span>
+                <AiOutlineDownload className={style.heroIcon} />
+              </button>
+            </a>
           </Reveal>
         </div>
-        <Reveal className={style.imgContainer}>
+        <Reveal thisWidth="100%" className={style.imgContainer}>
           <img className={style.heroImg} src={profile} alt="profile image" />
         </Reveal>
       </div>

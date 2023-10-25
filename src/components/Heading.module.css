@@ -37,3 +37,12 @@
   top: 6rem;
   font-weight: bold;
 }
+
+@media (max-width: 640px) {
+  .frontWord {
+    font-size: 1.563rem;
+  }
+  .backWord {
+    font-size: 3.815rem;
+  }
+}

@@ -6,7 +6,7 @@ import project2 from '../assets/project2.png'
 
 export default function Portfolio() {
   return (
-    <section className={style.portfolio}>
+    <section id="portfolio" className={style.portfolio}>
       <Heading front="My Work" back="Portfolio" color="#EEF0F1" />
       <div className={style.portfolioContent}>
         <Reveal>
@@ -14,8 +14,20 @@ export default function Portfolio() {
             <h2 className={style.projectTitle}>Jewelry Store</h2>
             <img className={style.projectImg} src={project1} alt="" />
             <div className={style.portfolioBtns}>
-              <button className={style.btn}>Live website</button>
-              <button className={style.btn}>Github repo</button>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://alecxz20.github.io/store/"
+              >
+                <button className={style.btn}>Live website</button>
+              </a>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://github.com/Alecxz20/store"
+              >
+                <button className={style.btn}>Github repo</button>
+              </a>
             </div>
           </div>
         </Reveal>
@@ -24,8 +36,20 @@ export default function Portfolio() {
             <h2 className={style.projectTitle}>Popular movies</h2>
             <img className={style.projectImg} src={project2} alt="" />
             <div className={style.portfolioBtns}>
-              <button className={style.btn}>Live website</button>
-              <button className={style.btn}>Github repo</button>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://alecxz20.github.io/movies-react-js/"
+              >
+                <button className={style.btn}>Live website</button>
+              </a>
+              <a 
+                rel="noreferrer"
+                target="_blank"
+                href="https://github.com/Alecxz20/movies-react-js"
+              >
+                <button className={style.btn}>Github repo</button>
+              </a>
             </div>
           </div>
         </Reveal>

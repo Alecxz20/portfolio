@@ -5,7 +5,7 @@ import { BsGithub, BsLinkedin, BsTwitter, BsInstagram } from 'react-icons/bs'
 
 export default function About() {
   return (
-    <section className={style.about}>
+    <section id="about" className={style.about}>
       <div className={style.container}>
         <Heading color="#EEF0F1" front={'Know Me More'} back={'About Me'} />
         <div className={style.aboutContent}>
@@ -32,28 +32,48 @@ export default function About() {
           </div>
           <div className={style.social}>
             <Reveal>
-              <div className={style.socialItem}>
+              <a
+                target="_blank"
+                href="https://github.com/Alecxz20"
+                className={style.socialItem}
+                rel="noreferrer"
+              >
                 <BsGithub className={style.socialIcon} />
                 <p>Github</p>
-              </div>
+              </a>
             </Reveal>
             <Reveal>
-              <div className={style.socialItem}>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://www.linkedin.com/in/alexis-perez-escalona"
+                className={style.socialItem}
+              >
                 <BsLinkedin className={style.socialIcon} />
                 <p>Linkedin</p>
-              </div>
+              </a>
             </Reveal>
             <Reveal>
-              <div className={style.socialItem}>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://twitter.com/Codedat"
+                className={style.socialItem}
+              >
                 <BsTwitter className={style.socialIcon} />
                 <p>Twitter</p>
-              </div>
+              </a>
             </Reveal>
             <Reveal>
-              <div className={style.socialItem}>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://www.instagram.com/alecxz24/"
+                className={style.socialItem}
+              >
                 <BsInstagram className={style.socialIcon} />
                 <p>Instagram</p>
-              </div>
+              </a>
             </Reveal>
           </div>
         </div>

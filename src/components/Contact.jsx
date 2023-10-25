@@ -6,7 +6,7 @@ import { AiOutlineMail } from 'react-icons/ai'
 
 export default function Contact() {
   return (
-    <section className={style.contact}>
+    <section id="contact" className={style.contact}>
       <Heading color="#EEF0F1" front="Get in Touch" back="Contact" />
       <div className={style.contactContent}>
         <div className={style.left}>
@@ -15,7 +15,13 @@ export default function Contact() {
               <span className={style.contactItemIcon}>
                 <BsWhatsapp />
               </span>
-              <a href="#">+57 304 5661202</a>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://wa.me/573045661202"
+              >
+                +57 304 5661202
+              </a>
             </div>
           </Reveal>
           <Reveal>
@@ -23,7 +29,9 @@ export default function Contact() {
               <span className={style.contactItemIcon}>
                 <AiOutlineMail />
               </span>
-              <a href="#">alexisopereze@gmail.com</a>
+              <a href="mailto:alexisopereze@gmail.com">
+                alexisopereze@gmail.com
+              </a>
             </div>
           </Reveal>
         </div>
@@ -31,7 +39,7 @@ export default function Contact() {
           <Reveal>
             <h3 className={style.formTitle}>Send me a note</h3>
           </Reveal>
-          <Reveal>
+          <Reveal thisWidth="100%">
             <form className={style.form}>
               <div className={style.formInputs}>
                 <div className={style.inputField}>

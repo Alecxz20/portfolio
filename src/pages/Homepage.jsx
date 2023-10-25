@@ -11,7 +11,7 @@ export default function Homepage() {
   return (
     <div className={style.homepage}>
       <Header />
-      <Hero />
+      <Hero id="home" />
       <About />
       <Services />
       <Portfolio />

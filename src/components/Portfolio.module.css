@@ -58,3 +58,26 @@
   color: #fafafa;
   background-color: var(--accent);
 }
+
+@media (max-width: 1150px) {
+  .portfolioContent {
+    max-width: 940px;
+  }
+}
+
+@media (max-width: 940px) {
+  .portfolioContent {
+    max-width: 695px;
+  }
+}
+
+@media (max-width: 640px) {
+  .portfolioContent {
+    display: flex;
+    flex-direction: column;
+  }
+  .btn {
+    padding: .5rem 1rem;
+    font-size: 1rem;
+  }
+}

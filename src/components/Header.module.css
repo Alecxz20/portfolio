@@ -38,6 +38,7 @@
 
 .link {
   transition: all 0.5s ease-in-out;
+  cursor: pointer;
 }
 
 .link:hover {
@@ -64,4 +65,37 @@
 .hireMeBtn:hover {
   background-color: var(--accent);
   color: var(--light-accent);
+}
+
+.hamMenuIcon {
+  display: none;
+  height: 28px;
+  width: 28px;
+  cursor: pointer;
+}
+
+@media (max-width: 1150px) {
+  .header {
+    max-width: 940px;
+  }
+  .links {
+    & a {
+      padding: 0.5rem;
+    }
+  }
+}
+
+@media (max-width: 940px) {
+  .header {
+    max-width: 695px;
+  }
+  .links {
+    display: none;
+  }
+  .hireMeBtn {
+    display: none;
+  }
+  .hamMenuIcon {
+    display: block;
+  }
 }

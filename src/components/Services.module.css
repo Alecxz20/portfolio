@@ -1,6 +1,7 @@
 .servicesContent {
   padding: 1rem;
-  align-items: center;
+  align-items: flex-start;
+  width: 100%;
   max-width: 1150px;
   margin: 0 auto;
   font-size: 1.25rem;
@@ -9,4 +10,24 @@
   grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
   gap: 1.5rem;
   padding-top: 48px;
+}
+
+@media (max-width: 1150px) {
+  .servicesContent {
+    max-width: 940px;
+  }
+}
+
+@media (max-width: 940px) {
+  .servicesContent {
+    max-width: 695px;
+  }
+}
+
+@media (max-width: 640px) {
+  .servicesContent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 }
