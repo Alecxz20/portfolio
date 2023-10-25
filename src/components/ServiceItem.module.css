@@ -1,0 +1,28 @@
+.serviceItem {
+  display: grid;
+  grid-template-columns: 52px 1fr;
+  gap: 1rem;
+  padding: 2rem 1rem;
+  background-color: var(--light-gray);
+  align-self: self-start;
+  border-radius: 2rem;
+}
+
+.serviceItemIcon {
+  color: var(--accent);
+  margin-top: 2rem;
+  & * {
+    width: 52px;
+    height: 52px;
+  }
+}
+
+.serviceItemTitle {
+  margin: 0;
+  font-size: 1.563rem;
+}
+
+.serviceItemText {
+  font-size: 1rem;
+  color: var(--gray);
+}

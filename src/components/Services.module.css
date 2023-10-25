@@ -1,0 +1,12 @@
+.servicesContent {
+  padding: 1rem;
+  align-items: center;
+  max-width: 1150px;
+  margin: 0 auto;
+  font-size: 1.25rem;
+  padding-bottom: 7rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+  gap: 1.5rem;
+  padding-top: 48px;
+}

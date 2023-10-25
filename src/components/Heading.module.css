@@ -1,0 +1,39 @@
+.heading {
+  height: 100px;
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+  padding-top: 7.6rem;
+}
+
+.frontWord {
+  font-weight: 500;
+  font-size: 2.441rem;
+  letter-spacing: 1px;
+  margin: 0;
+  z-index: 7;
+}
+
+.frontWord::after {
+  content: '';
+  height: 6px;
+  width: 50%;
+  background-color: var(--accent);
+  display: block;
+  margin: 0 auto;
+}
+
+.backWord {
+  position: absolute;
+  margin: 0;
+  bottom: 0;
+  font-size: 7.451rem;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  top: 6rem;
+  font-weight: bold;
+}

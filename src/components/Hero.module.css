@@ -1,0 +1,84 @@
+.container {
+  margin-top: 120px;
+  min-height: calc(100vh - 120px);
+  display: flex;
+  align-items: center;
+}
+
+.hero {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 1rem 1rem 0 1rem;
+  display: flex;
+  min-height: 100%;
+  align-items: center;
+  width: 100%;
+}
+
+.heroDescription {
+  width: 50%;
+  align-self: flex-start;
+  margin-top: 10%;
+}
+
+.heroTitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: bold;
+  font-size: 4.768rem;
+  margin: 0;
+}
+
+.heroH1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: bold;
+  font-size: 5.96rem;
+}
+
+.heroH1::after {
+  content: '';
+  height: 6px;
+  width: 50%;
+  background-color: var(--accent);
+  display: block;
+}
+
+.heroText {
+  font-size: 1.563rem;
+  color: var(--gray);
+}
+
+.heroBtn {
+  background-color: transparent;
+  border: solid;
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  border-radius: 100px;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  transition: all 0.5s ease-in;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.heroBtn:hover {
+  background-color: var(--accent);
+  color: white;
+}
+
+.heroIcon {
+  width: 32px;
+  height: 32px;
+}
+
+.heroImg {
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  object-fit: cover;
+  width: 600px;
+  align-self: flex-end;
+}

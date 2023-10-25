@@ -1,0 +1,50 @@
+.about {
+  background-color: var(--light-accent);
+}
+
+.container {
+  padding: 1rem;
+  max-width: 1150px;
+  margin: 0 auto;
+  font-size: 1.25rem;
+  padding-bottom: 7rem;
+}
+
+.aboutTitle {
+  font-size: 1.563rem;
+  & span {
+    color: var(--accent);
+    font-weight: 500;
+  }
+}
+
+.aboutText {
+  font-size: 1rem;
+}
+
+.aboutContent {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 3rem;
+  align-items: center;
+}
+
+.social {
+  margin-top: 48px;
+}
+
+.socialItem {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 1rem 0;
+  & * {
+    margin: 0;
+  }
+}
+
+.socialIcon {
+  width: 24px;
+  height: 24px;
+}

@@ -1,15 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sometype+Mono&display=swap');
+
+/* 5.96rem */
+/* 4.768rem */
+/* 3.815rem */
+/* 3.052rem */
+/* 2.441rem */
+/* 1.953rem */
+/* 1.563rem */
+/* 1.25rem */
+/* 1rem */
+/* 0.8rem */
+/* 0.64rem */
+/* 0.512rem */
+/* font-family: 'Cormorant Garamond', serif; */
 
 :root {
-    --text: #202528;
-    --background-color: ##FAFAFA;
-    --gray: ##6B737B;
-    --light-gray: #F4F6F5;
-    --accent: #1FC794;
-    --secondary: #DD3544;
+  --text: #202528;
+  --background-color: ##fafafa;
+  --gray: #6b737b;
+  --light-gray: #f4f6f5;
+  --light-accent: #F9F9FB;
+  --accent: #1fc794;
+  --secondary: #dd3544;
+  --light-bg: #EEF0F1;
 }
 
-html {font-size: 100%;}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
 
 body {
   background: var(--background-color);
@@ -19,9 +45,15 @@ body {
   color: var(--text);
 }
 
-p {margin-bottom: 1rem;}
+p {
+  margin-bottom: 1rem;
+}
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   margin: 3rem 0 1.38rem;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
@@ -33,12 +65,23 @@ h1 {
   font-size: 4.209rem;
 }
 
-h2 {font-size: 3.157rem;}
+h2 {
+  font-size: 3.157rem;
+}
 
-h3 {font-size: 2.369rem;}
+h3 {
+  font-size: 2.369rem;
+}
 
-h4 {font-size: 1.777rem;}
+h4 {
+  font-size: 1.777rem;
+}
 
-h5 {font-size: 1.333rem;}
+h5 {
+  font-size: 1.333rem;
+}
 
-small, .text_small {font-size: 0.75rem;}
+small,
+.text_small {
+  font-size: 0.75rem;
+}

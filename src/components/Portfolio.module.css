@@ -1,0 +1,60 @@
+.portfolio {
+  background-color: var(--light-accent);
+}
+
+.portfolioContent {
+  padding: 1rem;
+  align-items: center;
+  max-width: 1150px;
+  margin: 0 auto;
+  font-size: 1.25rem;
+  padding-bottom: 7rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(418px, 1fr));
+  gap: 1.5rem;
+  padding-top: 48px;
+}
+
+.project {
+  width: 100%;
+  position: relative;
+}
+
+.card {
+  padding: 1rem;
+}
+
+.projectTitle {
+  font-size: 1.563rem;
+  margin: 0 0 0.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.projectImg {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.portfolioBtns {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 100px;
+  font-size: 22px;
+  background-color: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  transition: all 0.5s ease-in;
+}
+
+.btn:hover {
+  color: #fafafa;
+  background-color: var(--accent);
+}
