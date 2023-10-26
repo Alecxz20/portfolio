@@ -3,8 +3,38 @@ import Heading from './Heading'
 import Reveal from './Reveal'
 import { BsWhatsapp } from 'react-icons/bs'
 import { AiOutlineMail } from 'react-icons/ai'
+import { useRef, useState } from 'react'
+import emailjs from '@emailjs/browser'
 
 export default function Contact() {
+  const form = useRef()
+  const [valueName, setValueName] = useState('')
+  const [valueEmail, setValueEmail] = useState('')
+  const [valueMessage, setValueMessage] = useState('')
+
+  const sendEmail = (e) => {
+    e.preventDefault()
+
+    emailjs
+      .sendForm(
+        'service_baisv9l',
+        'template_g1amwri',
+        form.current,
+        'me-q81_5hbXcOzKnY'
+      )
+      .then(
+        (result) => {
+          console.log(result.text)
+          setValueName('')
+          setValueEmail('')
+          setValueMessage('')
+        },
+        (error) => {
+          console.log(error.text)
+        }
+      )
+  }
+
   return (
     <section id="contact" className={style.contact}>
       <Heading color="#EEF0F1" front="Get in Touch" back="Contact" />
@@ -40,23 +70,29 @@ export default function Contact() {
             <h3 className={style.formTitle}>Send me a note</h3>
           </Reveal>
           <Reveal thisWidth="100%">
-            <form className={style.form}>
+            <form ref={form} onSubmit={sendEmail} className={style.form}>
               <div className={style.formInputs}>
                 <div className={style.inputField}>
                   <input
+                    name="from_name"
                     required
                     type="text"
                     className={style.inputBox}
                     id="fullName"
+                    value={valueName}
+                    onChange={(e) => setValueName(e.target.value)}
                   />
                   <label htmlFor="fullName">Full Name</label>
                 </div>
                 <div className={style.inputField}>
                   <input
+                    name="from_email"
                     required
                     type="email"
                     className={style.inputBox}
                     id="email"
+                    value={valueEmail}
+                    onChange={(e) => setValueEmail(e.target.value)}
                   />
                   <label htmlFor="email">Email</label>
                 </div>
@@ -68,6 +104,8 @@ export default function Contact() {
                   name="message"
                   id="message"
                   rows={10}
+                  value={valueMessage}
+                  onChange={(e) => setValueMessage(e.target.value)}
                 />
                 <label className={style.textAreaLabel} htmlFor="message">
                   Write a note
