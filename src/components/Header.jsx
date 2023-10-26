@@ -3,11 +3,7 @@ import { MdKeyboardDoubleArrowRight } from 'react-icons/md'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { Link, animateScroll as scroll } from 'react-scroll'
 
-// smooth={true}
-//       offset={50}
-//       duration={500}
-
-export default function Header() {
+export default function Header({setOpen}) {
   return (
     <header className={style.container}>
       <div className={style.header}>
@@ -54,7 +50,7 @@ export default function Header() {
           <span>Hire Me</span>
           <MdKeyboardDoubleArrowRight />
         </Link>
-        <GiHamburgerMenu className={style.hamMenuIcon} />
+        <GiHamburgerMenu onClick={() => setOpen(true)} className={style.hamMenuIcon} />
       </div>
     </header>
   )

@@ -2,11 +2,12 @@ import style from './Hero.module.css'
 import { AiOutlineDownload } from 'react-icons/ai'
 import Reveal from './Reveal'
 import profile from '../assets/profile.png'
-import resume from "../assets/Alexis_Perez-Resume.pdf"
+import resume from '../assets/Alexis_Perez-Resume.pdf'
+import Sidebar from './Sidebar'
 
-export default function Hero() {
+export default function Hero({ open, setOpen }) {
   return (
-    <section id='home' className={style.container}>
+    <section id="home" className={style.container}>
       <div className={style.hero}>
         <div className={style.heroDescription}>
           <Reveal>
@@ -36,6 +37,18 @@ export default function Hero() {
         <Reveal thisWidth="100%" className={style.imgContainer}>
           <img className={style.heroImg} src={profile} alt="profile image" />
         </Reveal>
+      </div>
+      <div
+        id="sidebar"
+        onClick={(e) => {
+          e.stopPropagation()
+          if (e.target.id === 'sidebar') {
+            setOpen(false)
+          }
+        }}
+        className={`${style.menuContainer} ${open ? style.show : style.hide}`}
+      >
+        <Sidebar open={open} setOpen={setOpen} />
       </div>
     </section>
   )
